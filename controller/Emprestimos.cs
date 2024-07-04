@@ -1,17 +1,21 @@
 using Model;
-namespace Controller;
-public class ControllerEmprestimo
+namespace Controller
 {
-    public static void testDB()
+    public class ControllerEmprestimo
     {
-        Emprestimo.testDB();
-    }
-    public static void Sincronizar()
-    {
-        Emprestimo.Sincronizar();
-    }
-    public static List<Emprestimo> ListarEmprestimos()
-    {
-        return Emprestimo.ListarEmprestimo();
+        public static void testDB()
+        {
+            Emprestimo.testDB();
+        }
+
+        public static void Sincronizar()
+        {
+            Emprestimo.Sincronizar();
+        }
+
+        public static List<Emprestimo> ListarEmprestimos()
+        {
+            return Emprestimo.ListarEmprestimo();
+        }
     }
 }
